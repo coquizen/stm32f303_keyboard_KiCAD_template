@@ -1,0 +1,314 @@
+EESchema Schematic File Version 5
+LIBS:Mechanical_Keyboard_STM32F3_Template-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812B D?
+U 1 1 5D721F04
+P 2140 1630
+F 0 "D?" H 2481 1676 50  0000 L CNN
+F 1 "WS2812B" H 2481 1585 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2190 1330 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2240 1255 50  0001 L TNN
+	1    2140 1630
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5D7224DC
+P 2140 2670
+F 0 "D?" H 2481 2716 50  0000 L CNN
+F 1 "WS2812B" H 2481 2625 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2190 2370 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2240 2295 50  0001 L TNN
+	1    2140 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5D724E74
+P 3580 1630
+F 0 "D?" H 3921 1676 50  0000 L CNN
+F 1 "WS2812B" H 3921 1585 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3630 1330 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3680 1255 50  0001 L TNN
+	1    3580 1630
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D?
+U 1 1 5D725F6C
+P 3580 2670
+F 0 "D?" H 3921 2716 50  0000 L CNN
+F 1 "WS2812B" H 3921 2625 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3630 2370 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3680 2295 50  0001 L TNN
+	1    3580 2670
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D726FC4
+P 2140 1330
+F 0 "#PWR?" H 2140 1180 50  0001 C CNN
+F 1 "+5V" H 2154 1502 50  0000 C CNN
+F 2 "" H 2140 1330 50  0001 C CNN
+F 3 "" H 2140 1330 50  0001 C CNN
+	1    2140 1330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D727CF0
+P 3580 1330
+F 0 "#PWR?" H 3580 1180 50  0001 C CNN
+F 1 "+5V" H 3594 1502 50  0000 C CNN
+F 2 "" H 3580 1330 50  0001 C CNN
+F 3 "" H 3580 1330 50  0001 C CNN
+	1    3580 1330
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D7291A0
+P 3580 2370
+F 0 "#PWR?" H 3580 2220 50  0001 C CNN
+F 1 "+5V" H 3594 2542 50  0000 C CNN
+F 2 "" H 3580 2370 50  0001 C CNN
+F 3 "" H 3580 2370 50  0001 C CNN
+	1    3580 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D729F96
+P 2140 2370
+F 0 "#PWR?" H 2140 2220 50  0001 C CNN
+F 1 "+5V" H 2154 2542 50  0000 C CNN
+F 2 "" H 2140 2370 50  0001 C CNN
+F 3 "" H 2140 2370 50  0001 C CNN
+	1    2140 2370
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72A128
+P 2140 2970
+F 0 "#PWR?" H 2140 2720 50  0001 C CNN
+F 1 "GND" H 2144 2799 50  0000 C CNN
+F 2 "" H 2140 2970 50  0001 C CNN
+F 3 "" H 2140 2970 50  0001 C CNN
+	1    2140 2970
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72AC7C
+P 3580 2970
+F 0 "#PWR?" H 3580 2720 50  0001 C CNN
+F 1 "GND" H 3584 2799 50  0000 C CNN
+F 2 "" H 3580 2970 50  0001 C CNN
+F 3 "" H 3580 2970 50  0001 C CNN
+	1    3580 2970
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72BA78
+P 3580 1930
+F 0 "#PWR?" H 3580 1680 50  0001 C CNN
+F 1 "GND" H 3584 1759 50  0000 C CNN
+F 2 "" H 3580 1930 50  0001 C CNN
+F 3 "" H 3580 1930 50  0001 C CNN
+	1    3580 1930
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72BCA2
+P 2140 1930
+F 0 "#PWR?" H 2140 1680 50  0001 C CNN
+F 1 "GND" H 2144 1759 50  0000 C CNN
+F 2 "" H 2140 1930 50  0001 C CNN
+F 3 "" H 2140 1930 50  0001 C CNN
+	1    2140 1930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2440 1630 2440 2240
+Wire Wire Line
+	2440 2240 1840 2240
+Wire Wire Line
+	1840 2240 1840 2670
+Wire Wire Line
+	2440 2670 2940 2670
+Wire Wire Line
+	2940 2670 2940 1630
+Wire Wire Line
+	2940 1630 3280 1630
+Wire Wire Line
+	3880 1630 3880 2250
+Wire Wire Line
+	3880 2250 3280 2250
+Wire Wire Line
+	3280 2250 3280 2670
+NoConn ~ 3880 2670
+$Comp
+L Device:C_Small C?
+U 1 1 5D72D1C0
+P 5670 1270
+F 0 "C?" H 5762 1316 50  0000 L CNN
+F 1 "C_Small" H 5762 1225 50  0000 L CNN
+F 2 "" H 5670 1270 50  0001 C CNN
+F 3 "~" H 5670 1270 50  0001 C CNN
+	1    5670 1270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D72D29F
+P 6180 1270
+F 0 "C?" H 6272 1316 50  0000 L CNN
+F 1 "C_Small" H 6272 1225 50  0000 L CNN
+F 2 "" H 6180 1270 50  0001 C CNN
+F 3 "~" H 6180 1270 50  0001 C CNN
+	1    6180 1270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D72ECFB
+P 6690 1270
+F 0 "C?" H 6782 1316 50  0000 L CNN
+F 1 "C_Small" H 6782 1225 50  0000 L CNN
+F 2 "" H 6690 1270 50  0001 C CNN
+F 3 "~" H 6690 1270 50  0001 C CNN
+	1    6690 1270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D72F40F
+P 7190 1270
+F 0 "C?" H 7282 1316 50  0000 L CNN
+F 1 "C_Small" H 7282 1225 50  0000 L CNN
+F 2 "" H 7190 1270 50  0001 C CNN
+F 3 "~" H 7190 1270 50  0001 C CNN
+	1    7190 1270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5670 1170 6180 1170
+Connection ~ 6180 1170
+Wire Wire Line
+	6180 1170 6690 1170
+Connection ~ 6690 1170
+Wire Wire Line
+	6690 1170 7190 1170
+$Comp
+L power:+5V #PWR?
+U 1 1 5D73050D
+P 5450 1170
+F 0 "#PWR?" H 5450 1020 50  0001 C CNN
+F 1 "+5V" H 5464 1342 50  0000 C CNN
+F 2 "" H 5450 1170 50  0001 C CNN
+F 3 "" H 5450 1170 50  0001 C CNN
+	1    5450 1170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1170 5670 1170
+Connection ~ 5670 1170
+Connection ~ 6180 1370
+Wire Wire Line
+	6180 1370 6690 1370
+Connection ~ 6690 1370
+Wire Wire Line
+	6690 1370 7190 1370
+Wire Wire Line
+	5670 1370 6180 1370
+$Comp
+L power:GND #PWR?
+U 1 1 5D730E85
+P 7770 1370
+F 0 "#PWR?" H 7770 1120 50  0001 C CNN
+F 1 "GND" H 7774 1199 50  0000 C CNN
+F 2 "" H 7770 1370 50  0001 C CNN
+F 3 "" H 7770 1370 50  0001 C CNN
+	1    7770 1370
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7770 1370 7190 1370
+Connection ~ 7190 1370
+$Comp
+L 74xGxx:74LVC1G34 U?
+U 1 1 5D6DB299
+P 6295 2255
+F 0 "U?" H 6270 2522 50  0000 C CNN
+F 1 "74LVC1G34" H 6270 2431 50  0000 C CNN
+F 2 "" H 6295 2255 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 6295 2255 50  0001 C CNN
+	1    6295 2255
+	1    0    0    -1  
+$EndComp
+Text HLabel 5995 2255 0    50   Input ~ 0
+RGBLED_3V3
+$Comp
+L power:+5V #PWR?
+U 1 1 5D6DBE9B
+P 6295 1885
+F 0 "#PWR?" H 6295 1735 50  0001 C CNN
+F 1 "+5V" H 6310 2058 50  0000 C CNN
+F 2 "" H 6295 1885 50  0001 C CNN
+F 3 "" H 6295 1885 50  0001 C CNN
+	1    6295 1885
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6DC613
+P 6295 2520
+F 0 "#PWR?" H 6295 2270 50  0001 C CNN
+F 1 "GND" H 6300 2347 50  0000 C CNN
+F 2 "" H 6295 2520 50  0001 C CNN
+F 3 "" H 6295 2520 50  0001 C CNN
+	1    6295 2520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6295 2520 6295 2355
+Wire Wire Line
+	6295 2155 6295 1885
+$Comp
+L Device:R_Small R?
+U 1 1 5D6DCCE2
+P 6800 2255
+F 0 "R?" V 6604 2255 50  0000 C CNN
+F 1 "470" V 6695 2255 50  0000 C CNN
+F 2 "" H 6800 2255 50  0001 C CNN
+F 3 "~" H 6800 2255 50  0001 C CNN
+	1    6800 2255
+	0    1    1    0   
+$EndComp
+Text GLabel 7155 2255 2    50   Input ~ 0
+RGBLED
+Wire Wire Line
+	6900 2255 7155 2255
+Wire Wire Line
+	6545 2255 6700 2255
+Text GLabel 1840 1630 0    50   Input ~ 0
+RGBLED
+$EndSCHEMATC
