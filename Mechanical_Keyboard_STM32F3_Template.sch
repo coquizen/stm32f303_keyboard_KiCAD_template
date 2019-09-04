@@ -236,8 +236,6 @@ D+BUS
 Text GLabel 3380 3785 2    50   BiDi ~ 0
 D-
 Wire Wire Line
-	3075 3785 2630 3785
-Wire Wire Line
 	1260 3185 1630 3185
 Wire Wire Line
 	1260 3785 1630 3785
@@ -799,34 +797,6 @@ Text GLabel 9975 4305 2    50   BiDi ~ 0
 D+
 Text GLabel 3376 3185 2    50   BiDi ~ 0
 D+
-Wire Wire Line
-	2630 3185 3077 3185
-$Comp
-L Device:R_Small R?
-U 1 1 5D6E6FBF
-P 3177 3185
-F 0 "R?" V 2981 3185 50  0000 C CNN
-F 1 "22" V 3072 3185 50  0000 C CNN
-F 2 "" H 3177 3185 50  0001 C CNN
-F 3 "~" H 3177 3185 50  0001 C CNN
-	1    3177 3185
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3277 3185 3376 3185
-$Comp
-L Device:R_Small R?
-U 1 1 5D6E76E0
-P 3175 3785
-F 0 "R?" V 2979 3785 50  0000 C CNN
-F 1 "22" V 3070 3785 50  0000 C CNN
-F 2 "" H 3175 3785 50  0001 C CNN
-F 3 "~" H 3175 3785 50  0001 C CNN
-	1    3175 3785
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3380 3785 3275 3785
 Text GLabel 9975 4105 2    50   Input ~ 0
 SDA
 $Comp
@@ -968,7 +938,7 @@ USB Connector
 Text Notes 980  4300 0    50   ~ 0
 ESD Protection Circuit
 Text Notes 1010 2130 0    50   ~ 0
-LED Collector/Emitter Circuit
+Mosfet
 Text Notes 5470 2230 0    50   ~ 0
 I2C Connector
 Text Notes 4030 1560 0    50   ~ 0
@@ -981,4 +951,39 @@ Text Notes 6650 6080 0    50   ~ 0
 Crystal\n
 Text Notes 6600 4350 0    50   ~ 0
 Reset Circuit
+Text Notes 7120 6945 0    50   ~ 0
+Notes:\nDecoupling capacitors should be placed as close to the MCU as possible:\nVDDA  -> 10nF  then 1uF \nVDDs  -> 4.7uF then 0.1uF
+$Comp
+L Device:R_Small R?
+U 1 1 5D6F4FE6
+P 2660 6180
+F 0 "R?" H 2719 6226 50  0000 L CNN
+F 1 "1.5kΩ" H 2719 6135 50  0000 L CNN
+F 2 "" H 2660 6180 50  0001 C CNN
+F 3 "~" H 2660 6180 50  0001 C CNN
+	1    2660 6180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D6F55A0
+P 3100 6290
+F 0 "#PWR?" H 3100 6140 50  0001 C CNN
+F 1 "+3.3V" H 3115 6461 50  0000 C CNN
+F 2 "" H 3100 6290 50  0001 C CNN
+F 3 "" H 3100 6290 50  0001 C CNN
+	1    3100 6290
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6290 2660 6290
+Wire Wire Line
+	2660 6290 2660 6280
+Wire Wire Line
+	2660 6080 2660 5966
+Connection ~ 2660 5966
+Wire Wire Line
+	2630 3185 3376 3185
+Wire Wire Line
+	2630 3785 3380 3785
 $EndSCHEMATC

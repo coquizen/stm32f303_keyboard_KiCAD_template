@@ -759,14 +759,10 @@ Wire Notes Line style solid
 	3710 7490 830  7490
 Wire Notes Line style solid
 	830  7490 830  4710
-Text Label 875  7445 0    50   ~ 10
-USB-C Connector
 Wire Notes Line style solid
 	3710 2590 3710 4460
 Wire Notes Line style solid
 	830  4460 830  2590
-Text Label 875  4415 0    50   ~ 10
-Data ESD Protection
 Wire Notes Line style solid
 	830  2590 3710 2590
 Wire Notes Line style solid
@@ -779,8 +775,6 @@ Wire Notes Line style solid
 	830  840  830  2320
 Wire Notes Line style solid
 	830  2320 3710 2320
-Text Label 875  2275 0    50   ~ 10
-LED Diode Collector{slash}Emitter
 Text GLabel 2430 5415 2    50   Input ~ 0
 VBUS
 Wire Bus Line
@@ -791,8 +785,6 @@ Wire Bus Line
 	6300 7490 3960 7490
 Wire Bus Line
 	3960 7490 3960 4710
-Text Label 4005 7445 0    50   ~ 10
-Power Supply and Voltage Converter
 Wire Notes Line style solid
 	3955 2590 6295 2590
 Wire Notes Line style solid
@@ -801,8 +793,6 @@ Wire Notes Line style solid
 	6295 4455 3955 4455
 Wire Notes Line style solid
 	3955 4455 3955 2590
-Text Label 4000 4420 0    50   ~ 10
-Boot Switch Circuit
 Text GLabel 9975 4205 2    50   BiDi ~ 0
 D-
 Text GLabel 9975 4305 2    50   BiDi ~ 0
@@ -855,29 +845,29 @@ SCL
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5D6E9789
-P 5646 2007
-F 0 "J?" H 5752 2285 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 5752 2194 50  0000 C CNN
-F 2 "" H 5646 2007 50  0001 C CNN
-F 3 "~" H 5646 2007 50  0001 C CNN
-	1    5646 2007
+P 5716 1817
+F 0 "J?" H 5822 2095 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 5822 2004 50  0000 C CNN
+F 2 "" H 5716 1817 50  0001 C CNN
+F 3 "~" H 5716 1817 50  0001 C CNN
+	1    5716 1817
 	1    0    0    -1  
 $EndComp
-Text GLabel 5846 1907 2    50   Input ~ 0
+Text GLabel 5916 1717 2    50   Input ~ 0
 5V
-Text GLabel 5846 2007 2    50   Input ~ 0
+Text GLabel 5916 1817 2    50   Input ~ 0
 SDA
-Text GLabel 5846 2107 2    50   Input ~ 0
+Text GLabel 5916 1917 2    50   Input ~ 0
 SCL
 $Comp
 L power:GND #PWR?
 U 1 1 5D6EC810
-P 5846 2207
-F 0 "#PWR?" H 5846 1957 50  0001 C CNN
-F 1 "GND" V 5851 2081 50  0000 R CNN
-F 2 "" H 5846 2207 50  0001 C CNN
-F 3 "" H 5846 2207 50  0001 C CNN
-	1    5846 2207
+P 5916 2017
+F 0 "#PWR?" H 5916 1767 50  0001 C CNN
+F 1 "GND" V 5921 1891 50  0000 R CNN
+F 2 "" H 5916 2017 50  0001 C CNN
+F 3 "" H 5916 2017 50  0001 C CNN
+	1    5916 2017
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line style solid
@@ -957,6 +947,69 @@ F 3 "~" H 4218 1272 50  0001 C CNN
 	1    4218 1272
 	1    0    0    -1  
 $EndComp
-Text Label 3990 1600 0    50   ~ 0
-Serial Programmer
+Wire Notes Line
+	5380 1390 6300 1390
+Wire Notes Line
+	6300 2320 5380 2320
+Wire Notes Line
+	5380 1390 5380 2320
+Wire Notes Line
+	6300 1390 6300 2320
+Wire Notes Line
+	6500 3500 8410 3500
+Wire Notes Line
+	8410 3500 8410 4450
+Wire Notes Line
+	8410 4450 6500 4450
+Wire Notes Line
+	6500 4450 6500 3500
+Text Notes 910  7400 0    50   ~ 0
+USB Connector
+Text Notes 980  4300 0    50   ~ 0
+ESD Protection Circuit
+Text Notes 1010 2130 0    50   ~ 0
+Mosfet
+Text Notes 5470 2230 0    50   ~ 0
+I2C Connector
+Text Notes 4030 1560 0    50   ~ 0
+Serial Programming
+Text Notes 4090 4320 0    50   ~ 0
+Boot Switch Circuit
+Text Notes 4130 7310 0    50   ~ 0
+Voltage Regulator
+Text Notes 6650 6080 0    50   ~ 0
+Crystal\n
+Text Notes 6600 4350 0    50   ~ 0
+Reset Circuit
+Text Notes 7120 6945 0    50   ~ 0
+Notes:\nDecoupling capacitors should be placed as close to the MCU as possible:\nVDDA  -> 10nF  then 1uF \nVDDs  -> 4.7uF then 0.1uF
+$Comp
+L Device:R_Small R?
+U 1 1 5D6F4FE6
+P 2660 6180
+F 0 "R?" H 2719 6226 50  0000 L CNN
+F 1 "1.5kΩ" H 2719 6135 50  0000 L CNN
+F 2 "" H 2660 6180 50  0001 C CNN
+F 3 "~" H 2660 6180 50  0001 C CNN
+	1    2660 6180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5D6F55A0
+P 3100 6290
+F 0 "#PWR?" H 3100 6140 50  0001 C CNN
+F 1 "+3.3V" H 3115 6461 50  0000 C CNN
+F 2 "" H 3100 6290 50  0001 C CNN
+F 3 "" H 3100 6290 50  0001 C CNN
+	1    3100 6290
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6290 2660 6290
+Wire Wire Line
+	2660 6290 2660 6280
+Wire Wire Line
+	2660 6080 2660 5966
+Connection ~ 2660 5966
 $EndSCHEMATC

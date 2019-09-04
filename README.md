@@ -5,4 +5,4 @@ A mechanical keyboard template for use with KiCAD v5 to jumpstart designing a me
 Separate files are provided for the key matrix as well as the underglow LED matrix. All that is left for the enduser is to implement the matrix for both switches and LED underglow and map them appropriately to the MCU using hierarchical labels.
 
 Keyboard Maintainer: [Ian Canino](https://github.com/CaninoDev)  
-Components Included: 
+Components Included: LED Underglow, ESD Protection, LED MX switches
