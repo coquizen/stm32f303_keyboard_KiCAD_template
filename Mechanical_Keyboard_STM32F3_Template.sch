@@ -710,17 +710,6 @@ Wire Wire Line
 	5422 6743 5422 6628
 Connection ~ 5127 6743
 $Comp
-L power:+5V #PWR?
-U 1 1 5D6EC320
-P 4587 5898
-F 0 "#PWR?" H 4587 5748 50  0001 C CNN
-F 1 "+5V" H 4602 6071 50  0000 C CNN
-F 2 "" H 4587 5898 50  0001 C CNN
-F 3 "" H 4587 5898 50  0001 C CNN
-	1    4587 5898
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5D6ECC37
 P 5657 5898
@@ -773,7 +762,7 @@ Wire Notes Line style solid
 	830  840  830  2320
 Wire Notes Line style solid
 	830  2320 3710 2320
-Text GLabel 2430 5415 2    50   Input ~ 0
+Text GLabel 2430 5415 2    50   Output ~ 0
 VBUS
 Wire Bus Line
 	3960 4710 6300 4710
@@ -964,17 +953,6 @@ F 3 "~" H 2660 6180 50  0001 C CNN
 	1    2660 6180
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D6F55A0
-P 3100 6290
-F 0 "#PWR?" H 3100 6140 50  0001 C CNN
-F 1 "+3.3V" H 3115 6461 50  0000 C CNN
-F 2 "" H 3100 6290 50  0001 C CNN
-F 3 "" H 3100 6290 50  0001 C CNN
-	1    3100 6290
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3100 6290 2660 6290
 Wire Wire Line
@@ -986,4 +964,8 @@ Wire Wire Line
 	2630 3185 3376 3185
 Wire Wire Line
 	2630 3785 3380 3785
+Text GLabel 4587 5898 0    50   Input ~ 0
+VBUS
+Text GLabel 3100 6290 2    50   Output ~ 0
+VBUS
 $EndSCHEMATC
