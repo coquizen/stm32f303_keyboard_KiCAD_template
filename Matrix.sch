@@ -1,5 +1,4 @@
 EESchema Schematic File Version 5
-LIBS:Mechanical_Keyboard_STM32F3_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
