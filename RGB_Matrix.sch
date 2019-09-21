@@ -1,9 +1,10 @@
 EESchema Schematic File Version 5
+LIBS:Mechanical_Keyboard_STM32F3_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -12,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L LED:WS2812B D?
@@ -320,4 +326,6 @@ Wire Notes Line
 	5170 3180 5170 1570
 Text Notes 5270 3050 0    50   ~ 0
 Buffer Gate
+Text Notes 7111 6690 0    50   ~ 10
+NOTE: If using WS2814B(v.3), filtering capacitors will not be needed.
 $EndSCHEMATC
