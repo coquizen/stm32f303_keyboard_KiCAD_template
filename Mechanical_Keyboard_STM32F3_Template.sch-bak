@@ -1,5 +1,4 @@
 EESchema Schematic File Version 5
-LIBS:Mechanical_Keyboard_STM32F3_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -514,7 +513,7 @@ Wire Wire Line
 Wire Wire Line
 	1825 1625 1685 1625
 $Comp
-L Regulator_Linear:TLV70233_SOT23-5 U?
+L Mechanical_Keyboard_STM32F3_Template-rescue:TLV70233_SOT23-5-Regulator_Linear U?
 U 1 1 5D6E88CD
 P 5122 5998
 F 0 "U?" H 5122 6340 50  0000 C CNN
@@ -578,23 +577,9 @@ F 3 "" H 5657 5898 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5422 5998 5422 5898
-Wire Wire Line
 	5657 5893 5422 5893
 Wire Wire Line
-	5422 5893 5422 5898
-Wire Wire Line
-	5422 5998 5422 6428
-Connection ~ 5422 5998
-Wire Wire Line
-	4822 5898 4822 5998
-Connection ~ 4822 5998
-Wire Wire Line
-	4822 5998 4822 6428
-Wire Wire Line
 	4587 5898 4822 5898
-Connection ~ 4822 5898
-Connection ~ 5422 5898
 Wire Notes Line style solid
 	830  4710 3710 4710
 Wire Notes Line style solid
@@ -988,4 +973,8 @@ F 3 "~" H 10351 5474 50  0001 C CNN
 $EndComp
 Text GLabel 9506 5214 0    50   Input ~ 0
 OSC_OUT
+Wire Wire Line
+	5422 5893 5422 6428
+Wire Wire Line
+	4822 5898 4822 6428
 $EndSCHEMATC
